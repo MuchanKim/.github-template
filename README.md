@@ -1,5 +1,5 @@
 # .github-template
-> GitHub 레포지토리의 이슈/PR 템플릿 및 설정을 위한 표준 템플릿입니다.
+> GitHub 레포지토리의 이슈/PR 템플릿 및 설정을 위한 표준 템플릿입니다. 자유롭게 사용 가능합니다. - Moo -
 
 [![마지막 업데이트](https://img.shields.io/badge/last%20updated-2025--01--05-brightgreen)](https://github.com/username/github-template/commits/main)
 
