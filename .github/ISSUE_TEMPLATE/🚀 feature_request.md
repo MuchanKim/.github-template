@@ -1,9 +1,7 @@
 ---
 name: ✨ 기능 제안
 about: 새로운 기능을 제안해주세요!
-title: "[FEAT] "
-labels: 💡 enhancement
-assignees: ''
+title: "[Feature] "
 ---
 
 ## 📝 Description
