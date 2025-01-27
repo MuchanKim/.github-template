@@ -1,9 +1,6 @@
 ---
 name: 📋 General Issue
 about: 일반적인 작업 사항을 작성해주세요
-title: ""
-labels: ''
-assignees: ''
 ---
 
 ## 📝 Description
