@@ -14,12 +14,15 @@ body:
     validations:
       required: true
 
-  - type: input
+  - type: textarea
     id: related
     attributes:
       label: "📌 관련 이슈/PR Related Issues/PRs"
-      placeholder: "#42, #123"
-      description: "관련된 이슈나 PR이 있다면 #을 포함한 번호를 입력해주세요 (쉼표로 구분 가능).\nIf there are related issues or PRs, please enter the numbers including # (separate with commas)."
+      placeholder: |
+        예시:
+        - 별 다른 설명이 필요하지 않을 경우는 - #(issueNumber)
+          설명과 함께 언급할 때는 #(issueNumber)를 사용합니다.
+      description: "관련된 이슈나 PR이 있다면 #을 포함한 번호를 입력해주세요.\nIf there are related issues or PRs, please enter the numbers including #."
 
   - type: textarea
     id: file-paths
