@@ -15,16 +15,6 @@ body:
       required: true
 
   - type: textarea
-    id: related
-    attributes:
-      label: "📌 관련 이슈/PR Related Issues/PRs"
-      placeholder: |
-        예시:
-        - 별 다른 설명이 필요하지 않을 경우는 - #(issueNumber)
-          설명과 함께 언급할 때는 #(issueNumber)를 사용합니다.
-      description: "관련된 이슈나 PR이 있다면 #을 포함한 번호를 입력해주세요.\nIf there are related issues or PRs, please enter the numbers including #."
-
-  - type: textarea
     id: file-paths
     attributes:
       label: "📂 파일 위치 Paths"
@@ -36,7 +26,8 @@ body:
         
         Source/Core/Network/
         └── AuthManager.swift
-      description: "리팩토링이 필요한 파일들의 경로를 입력해주세요. 디렉토리 단위로 입력 가능합니다.\nPlease enter the paths of files that need refactoring. Directory paths are also acceptable."
+      description: "리팩토링이 필요한 파일들의 경로를 입력해주세요.\nPlease enter the paths to the files that need refactoring."
+      required: true
 
   - type: textarea
     id: description
@@ -78,4 +69,9 @@ body:
     id: additional
     attributes:
       label: "ℹ️ 추가 정보 Additional information"
-      placeholder: "리팩토링 시 참고할 만한 추가 정보가 있다면 작성해주세요.\nPlease provide any additional information that may help with the refactoring."
+      placeholder: |
+        예시:
+        - 관련 이슈: #42, #123
+        - 참고 문서
+        - 기타 고려사항
+      description: "리팩토링 시 참고할 만한 추가 정보(관련 이슈, 문서 등)가 있다면 작성해주세요.\nPlease provide any additional information that may help with the refactoring (related issues, documentation, etc)."
