@@ -41,7 +41,13 @@ body:
       required: true
 
   - type: textarea
-    id: references
+    id: additional
     attributes:
-      label: "📎 참고 자료 References"
-      placeholder: "디자인 시안, 유사 사례, 기술 문서 등을 첨부해주세요.\nPlease attach design drafts, similar cases, technical documents, etc."
+      label: "ℹ️ 참고 자료 및 추가 정보 References & Additional Information"
+      placeholder: |
+        예시:
+        - 관련 이슈: #42, #123
+        - 디자인 시안/피그마 링크
+        - 유사 사례/참고 문서
+        - 기타 고려사항
+      description: "기능 구현에 참고할 만한 자료나 추가 정보가 있다면 작성해주세요.\nPlease provide any references or additional information that may help with the implementation (related issues, design specs, documentation, etc)."
