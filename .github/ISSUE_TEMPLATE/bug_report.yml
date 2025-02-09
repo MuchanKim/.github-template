@@ -19,7 +19,7 @@ body:
     attributes:
       label: "📌 버전 Version"
       placeholder: "v1.0.0"
-      description: "버전이 명시되어있지 않다면 관련 이슈나 브랜치의 태그 번호를 입력해주세요.(추가 정보란에 추가기재)\nIf no version is specified, please enter the number of the tag for the relevant issue or branch.(Additional information in the additional information section)"
+      description: "버전이 명시되어있지 않다면 관련 이슈나 브랜치의 태그 번호를 입력해주세요.(추가 정보란에 태그번호 필수 기재)\nIf no version is specified, please enter the number of the tag for the relevant issue or branch.(Tag number must be entered in the additional information field)"
     validations:
       required: true
 
