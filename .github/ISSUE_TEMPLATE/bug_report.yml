@@ -1,50 +1,93 @@
-name: "🐞 버그 리포트"
-description: "발견한 버그를 보고하세요."
-title: "[Bugfix] "
-labels: ["bug"]
+name: "버그 리포트"
+description: "발생한 버그를 상세히 설명해주세요"
+title: "[Bug] "
 body:
   - type: markdown
     attributes:
       value: |
-        ## 📝 설명
-        > 발생한 버그에 대해 설명해주세요.
+        # 기본 정보
+        > 버그가 발생한 환경 정보를 알려주세요
+
+  - type: dropdown
+    id: environment
+    attributes:
+      label: "발생 환경"
+      options:
+        - Production
+        - Development
+        - Test
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: "버전"
+      placeholder: "v1.0.0"
+      description: "<!-- 버전이 명시되어있지 않다면 관련 이슈나 브랜치를 태그해주세요 -->"
+    validations:
+      required: true
+
+  - type: input
+    id: file-path
+    attributes:
+      label: "파일 위치"
+      placeholder: "src/components/Login.tsx"
+      description: "버그가 발생한 파일 경로를 입력해주세요"
+
+  - type: markdown
+    attributes:
+      value: |
+        # 버그 설명
+        > 발생한 버그에 대해 자세히 설명해주세요
         <!-- 어떤 문제가 발생했나요?, 어떤 상황에서 발생했나요?, 어떤 기능에 영향을 미치나요? -->
-        <!-- hotfix의 경우 제목 접두사를 [Bugfix]로 바꿔주세요! -->
 
   - type: textarea
     id: description
     attributes:
-      label: "설명"
-      description: "버그에 대한 자세한 설명을 입력하세요."
-      placeholder: "버그 설명을 입력하세요."
+      placeholder: |
+        예시:
+        - 로그인 버튼 클릭 시 화면이 멈추는 현상이 발생합니다
+        - 이메일 입력 후 로그인 시도할 때마다 발생합니다
+        - 로그인 기능 전체를 사용할 수 없습니다
     validations:
       required: true
 
   - type: markdown
     attributes:
       value: |
-        ## ✅ 할 일
-        > 버그 수정을 위해 필요한 작업을 작성해주세요.
+        # 재현 방법
+        > 버그를 재현하기 위한 단계를 설명해주세요
 
-  - type: checkboxes
-    id: to_do
+  - type: textarea
+    id: reproduction
     attributes:
-      label: "할 일"
-      options:
-        - label: "버그 원인 파악"
-        - label: "코드 수정"
-        - label: "테스트"
+      placeholder: |
+        1. '...' 페이지로 이동
+        2. '...' 버튼 클릭
+        3. '...' 입력
+        4. 에러 발생
+    validations:
+      required: true
 
   - type: markdown
     attributes:
       value: |
-        ## 📋 참고 자료
-        > 문제 해결에 도움될 만한 자료를 첨부해주세요.
-        <!-- ex: 환경 정보(OS, 브라우저 등), 스크린샷, 에러 메시지, 콘솔 로그 등 -->
+        # 스크린샷 및 로그
+        > 관련 스크린샷이나 에러 로그를 첨부해주세요
 
   - type: textarea
-    id: etc
+    id: logs
     attributes:
-      label: "참고 자료"
-      description: "참고 자료를 입력하세요."
-      placeholder: "환경 정보, 스크린샷, 에러 메시지 등을 입력하세요."
+      placeholder: "스크린샷이나 로그를 이곳에 첨부해주세요"
+
+  - type: markdown
+    attributes:
+      value: |
+        # 추가 정보
+        > 문제 해결에 도움이 될 만한 추가 정보가 있다면 작성해주세요
+
+  - type: textarea
+    id: additional
+    attributes:
+      placeholder: "추가 정보를 입력해주세요"
