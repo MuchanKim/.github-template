@@ -12,7 +12,7 @@ body:
         - Code Quality (코드 품질 및 가독성 개선)
         - Both (구조 개선과 코드 개선 모두)
     validations:
-    required: true
+      required: true
 
   - type: textarea
     id: file-paths
@@ -27,6 +27,7 @@ body:
         Source/Core/Network/
         └── AuthManager.swift
       description: "리팩토링이 필요한 파일들의 경로를 입력해주세요.\nPlease enter the paths to the files that need refactoring."
+    validations:
       required: true
 
   - type: textarea
