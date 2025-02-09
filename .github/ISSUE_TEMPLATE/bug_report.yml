@@ -19,7 +19,7 @@ body:
     attributes:
       label: "📌 버전 Version"
       placeholder: "v1.0.0"
-      description: "버전이 명시되어있지 않다면 관련 이슈나 브랜치의 태그 번호를 입력해주세요.\nIf no version is specified, please enter the number of the tag for the relevant issue or branch."
+      description: "버전이 명시되어있지 않다면 관련 이슈나 브랜치의 태그 번호를 입력해주세요.(추가 정보란에 추가기재)\nIf no version is specified, please enter the number of the tag for the relevant issue or branch.(Additional information in the additional information section)"
     validations:
       required: true
 
@@ -47,10 +47,14 @@ body:
     id: logs
     attributes:
       label: "📷 스크린샷 및 로그 Screenshots and logs"
-      placeholder: "스크린샷이나 로그를 이곳에 첨부해주세요. Please attach screenshots or logs here."
+      description: "스크린샷이나 로그를 이곳에 첨부해주세요. Please attach screenshots or logs here."
 
   - type: textarea
     id: additional
     attributes:
       label: "ℹ️ 추가 정보 Additional information"
-      placeholder: "문제 해결에 도움이 될 만한 추가 정보가 있다면 작성해주세요. Please provide any additional information that may help us troubleshoot your issue."
+      placeholder: |
+        예시:
+        - 관련 이슈: #42, #123
+        - 기타 참고 사항 
+      description: "문제 해결에 도움이 될 만한 추가 정보가 있다면 작성해주세요. Please provide any additional information that may help us troubleshoot your issue."
