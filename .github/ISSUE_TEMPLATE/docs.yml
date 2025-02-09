@@ -1,7 +1,7 @@
 name: "📝 Documentation"
 description: "문서 작업을 위한 템플릿입니다. Template for documentation work"
 title: "[Docs] "
-labels: ["Documentation"]
+labels: ["Docs"]
 body:
   - type: dropdown
     id: category
