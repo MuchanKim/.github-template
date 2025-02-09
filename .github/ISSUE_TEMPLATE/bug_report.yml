@@ -39,7 +39,7 @@ body:
         - 로그인 버튼 클릭 시 화면이 멈추는 현상이 발생합니다. When I click the login button, the screen freezes.
         - 이메일 입력 후 로그인 시도할 때마다 발생합니다. This happens every time I try to log in after entering my email.
         - 로그인 기능 전체를 사용할 수 없습니다. The login feature is completely unavailable.
-      description: "어떤 문제가 발생했나요?, 어떤 상황에서 발생했나요?, 어떤 기능에 영향을 미치나요?\nWhat problem occurred?, Under what circumstances did it occur?, What function does it affect?"
+      description: "어떤 문제가 발생했나요? 어떤 상황에서 발생했나요? 어떤 기능에 영향을 미치나요?\nWhat problem occurred? Under what circumstances did it occur? What function does it affect?"
     validations:
       required: true
 
