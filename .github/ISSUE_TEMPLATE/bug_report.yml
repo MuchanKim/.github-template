@@ -8,9 +8,9 @@ body:
     attributes:
       label: "🌐 발생 환경 Environment"
       options:
-        - Production
-        - Development
-        - Test
+        - Production (실제 서비스 환경)
+        - Development (개발 환경)
+        - Test (테스트 환경)
     validations:
       required: true
 
