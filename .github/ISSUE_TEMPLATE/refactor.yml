@@ -35,7 +35,7 @@ body:
     attributes:
       label: "📝 개선 내용 Improvement Description"
       placeholder: |
-        예시:
+        예시 Ex:
         - 현재 문제점: LoginViewController에서 비즈니스 로직과 UI 로직이 섞여 있습니다.
           Current issues: Business logic and UI logic are mixed in LoginViewController.
         
@@ -53,7 +53,7 @@ body:
     attributes:
       label: "🛠️ 구현 방안 Implementation Plan"
       placeholder: |
-        예시:
+        예시 Ex:
         - 개선 방식: MVVM 패턴을 적용하여 비즈니스 로직을 ViewModel로 분리합니다.
           Improvement method: Apply MVVM pattern to separate business logic into ViewModel.
         
@@ -71,8 +71,8 @@ body:
     attributes:
       label: "ℹ️ 추가 정보 Additional information"
       placeholder: |
-        예시:
-        - 관련 이슈: #42, #123
-        - 참고 문서
-        - 기타 고려사항
+        예시 Ex:
+        - 관련 이슈: #42, #123 Related issues: #42, #123
+        - 참고 문서 Reference Documents
+        - 기타 고려사항 Other Considerations
       description: "리팩토링 시 참고할 만한 추가 정보(관련 이슈, 문서 등)가 있다면 작성해주세요.\nPlease provide any additional information that may help with the refactoring (related issues, documentation, etc)."
