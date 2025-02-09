@@ -11,7 +11,6 @@ body:
         - New Feature (새로운 기능)
         - Enhancement (기존 기능 개선)
         - UI/UX (디자인/사용성)
-        - Refactor (코드 개선)
     validations:
       required: true
 
