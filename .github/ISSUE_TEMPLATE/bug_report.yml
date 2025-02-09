@@ -1,0 +1,50 @@
+name: "🐞 버그 리포트"
+description: "발견한 버그를 보고하세요."
+title: "[Bugfix] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 📝 설명
+        > 발생한 버그에 대해 설명해주세요.
+        <!-- 어떤 문제가 발생했나요?, 어떤 상황에서 발생했나요?, 어떤 기능에 영향을 미치나요? -->
+        <!-- hotfix의 경우 제목 접두사를 [Bugfix]로 바꿔주세요! -->
+
+  - type: textarea
+    id: description
+    attributes:
+      label: "설명"
+      description: "버그에 대한 자세한 설명을 입력하세요."
+      placeholder: "버그 설명을 입력하세요."
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ## ✅ 할 일
+        > 버그 수정을 위해 필요한 작업을 작성해주세요.
+
+  - type: checkboxes
+    id: to_do
+    attributes:
+      label: "할 일"
+      options:
+        - label: "버그 원인 파악"
+        - label: "코드 수정"
+        - label: "테스트"
+
+  - type: markdown
+    attributes:
+      value: |
+        ## 📋 참고 자료
+        > 문제 해결에 도움될 만한 자료를 첨부해주세요.
+        <!-- ex: 환경 정보(OS, 브라우저 등), 스크린샷, 에러 메시지, 콘솔 로그 등 -->
+
+  - type: textarea
+    id: etc
+    attributes:
+      label: "참고 자료"
+      description: "참고 자료를 입력하세요."
+      placeholder: "환경 정보, 스크린샷, 에러 메시지 등을 입력하세요."
