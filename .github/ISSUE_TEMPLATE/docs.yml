@@ -17,38 +17,14 @@ body:
       required: true
 
   - type: textarea
-    id: description
+    id: content
     attributes:
-      label: "📝 작업 내용 Task Description"
+      label: "📝 문서 내용 Document Content"
       placeholder: |
         예시 Ex:
-        - 현재 상황: 로그인 모듈에 대한 문서화가 부족합니다.
-          Current situation: Lack of documentation for the login module.
-        
-        - 작업 필요성: 새로운 팀원의 온보딩과 유지보수를 위해 문서화가 필요합니다.
-          Necessity: Documentation needed for new team member onboarding and maintenance.
-        
-        - 작업 범위: 로그인 플로우, API 명세, 에러 처리 방식 등을 문서화
-          Scope: Document login flow, API specifications, error handling methods, etc.
-      description: "어떤 문서 작업이 필요한지, 왜 필요한지 설명해주세요.\nPlease explain what documentation work is needed and why it is necessary."
-    validations:
-      required: true
-
-  - type: textarea
-    id: implementation
-    attributes:
-      label: "🛠️ 구현 방안 Implementation Plan"
-      placeholder: |
-        예시 Ex:
-        - 작업 방식: 마크다운 형식으로 API 문서 작성
-          Implementation method: Write API documentation in markdown format
-        
-        - 주요 내용: 인증 프로세스 플로우, API 엔드포인트 설명, 에러 코드 정의
-          Main contents: Authentication process flow, API endpoint descriptions, error code definitions
-        
-        - 참고할 점: 기존 문서 형식 준수, 영문 병기 필요
-          Points to consider: Follow existing documentation format, need bilingual writing
-      description: "어떻게 문서를 작성/수정할 것인지 구체적인 방안을 설명해주세요.\nPlease explain how you plan to write/modify the documentation with specific approaches."
+        - 문서화할 내용: 로그인 모듈의 사용법과 예제
+          Content to document: Usage and examples of the login module.
+      description: "문서화할 내용을 구체적으로 작성해주세요.\nPlease provide the specific content to be documented."
     validations:
       required: true
 
