@@ -12,6 +12,7 @@ body:
         - Guide (가이드/튜토리얼 문서)
         - API (API 문서/프로토콜 명세)
         - Wiki (위키 문서 작성/수정)
+        - Else (기타)
     validations:
       required: true
 
